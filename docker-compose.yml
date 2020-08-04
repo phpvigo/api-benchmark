@@ -23,3 +23,15 @@ services:
     image: phpvigo/api-benchmark-reactphp:latest
     ports:
       - 8000:8000
+  vegeta:
+    build:
+      context: .
+      dockerfile: vegeta/Dockerfile
+    ports:
+      - 8080:80
+  ab:
+    build:
+      context: .
+      dockerfile: ab/Dockerfile
+    ports:
+      - 8081:80

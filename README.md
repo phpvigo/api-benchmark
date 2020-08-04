@@ -6,6 +6,28 @@
 docker-compose up
 ```
 
+## Run the benchmarks
+
+### Vegeta
+
+500 concurrency each second during 10 seconds.
+
+```bash
+ docker-compose exec vegeta sh benchmark.sh
+```
+
+See results: http://localhost:8080/
+
+### Apache benchmark
+
+5000 request with 100 concurrency.
+
+```bash
+ docker-compose exec ab sh benchmark.sh
+```
+
+See results: http://localhost:8081/
+
 ## Endpoints
 
 ### Get all provinces
