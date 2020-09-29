@@ -9,6 +9,8 @@ services:
       - MYSQL_DATABASE=db
       - MYSQL_USER=benchmark
       - MYSQL_PASSWORD=benchmark
+    ports:
+      - 3306:3306
   webserver:
     image: nginx:alpine
     volumes:
@@ -23,6 +25,22 @@ services:
     image: phpvigo/api-benchmark-reactphp:latest
     ports:
       - 8000:8000
+    environment:
+      - ORM_ACTIVE=1
+  reactphp-no-orm:
+    image: phpvigo/api-benchmark-reactphp:latest
+    ports:
+      - 8004:8000
+    environment:
+      - ORM_ACTIVE=0
+  node:
+    image: phpvigo/api-benchmark-node:latest
+    ports:
+      - 8002:80
+  go:
+    image: phpvigo/api-benchmark-golang:latest
+    ports:
+      - 8003:8080
   vegeta:
     build:
       context: .

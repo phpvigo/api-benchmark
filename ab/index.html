@@ -9,14 +9,20 @@
             <legend>Data loaded</legend>
             <ul>
                 <li>DriftPHP: <a href="./provinces.drift.html" target="_blank">provinces.drift.html</a></li>
+                <li>DriftPHP: <a href="./provinces.drift-no-orm.html" target="_blank">provinces.drift-no-orm.html</a></li>
                 <li>Symfony5: <a href="./provinces.s5.html" target="_blank">provinces.s5.html</a></li>
+                <li>NodeJS: <a href="./provinces.node.html" target="_blank">provinces.node.html</a></li>
+                <li>Golang: <a href="./provinces.go.html" target="_blank">provinces.go.html</a></li>
             </ul>
         </fieldset>
         <fieldset>
             <legend>Benchmark text report</legend>
             <ul>
                 <li>DriftPHP: <a href="./drift.txt" target="_blank">TXT</a> | <a href="./drift.tsv" target="_blank">TSV</a></li>
+                <li>DriftPHP with DBAL: <a href="./drift-no-orm.txt" target="_blank">TXT</a> | <a href="./drift-no-orm.tsv" target="_blank">TSV</a></li>
                 <li>Symfony5: <a href="./s5.txt" target="_blank">TXT</a> | <a href="./s5.tsv" target="_blank">TSV</a></li>
+                <li>NodeJS: <a href="./node.txt" target="_blank">TXT</a> | <a href="./node.tsv" target="_blank">TSV</a></li>
+                <li>Golang: <a href="./go.txt" target="_blank">TXT</a> | <a href="./go.tsv" target="_blank">TSV</a></li>
             </ul>
         </fieldset>
         <fieldset>
@@ -26,11 +32,31 @@
                 <img src="./drift-ttime.png" />
             </div>
         </fieldset>
+        <legend>Benchmark plot report DriftPHP with DBAL</legend>
+        <div style="text-align: center">
+            <img src="./drift-no-orm.png" />
+            <img src="./drift-no-orm-ttime.png" />
+        </div>
+        </fieldset>
         <fieldset>
             <legend>Benchmark plot report Symfony5</legend>
             <div style="text-align: center">
                 <img src="./s5.png" />
                 <img src="./s5-ttime.png" />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Benchmark plot report NodeJS</legend>
+            <div style="text-align: center">
+                <img src="./node.png" />
+                <img src="./node-ttime.png" />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Benchmark plot report GoLang</legend>
+            <div style="text-align: center">
+                <img src="./go.png" />
+                <img src="./go-ttime.png" />
             </div>
         </fieldset>
     </body>

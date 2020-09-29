@@ -32,8 +32,11 @@ See results: http://localhost:8081/
 
 ### Get all provinces
 
-- ReactPHP  http://localhost:8000/provinces  
-- Symfony5  http://localhost:8001/provinces
+- ReactPHP          http://localhost:8000/provinces  
+- Symfony5          http://localhost:8001/provinces
+- NodeJS            http://localhost:8002/provinces
+- Golang            http://localhost:8003/provinces
+- ReactPHP no ORM   http://localhost:8004/provinces  
 
 ## Database used
 
